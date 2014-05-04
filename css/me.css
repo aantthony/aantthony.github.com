@@ -1,0 +1,195 @@
+* {
+    margin:0;padding:0;
+    text-rendering: optimizelegibility;
+}
+img { border: none; }
+
+
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    background: #eee;
+}
+
+header {
+    background: url('header-bg.png') repeat-x;
+    height: 331px;
+    background-size: auto 331px;
+}
+
+header .me {
+    /*background: url('me.png') no-repeat;*/
+    height: 374px;
+    width: 332px;
+    background-size: 331px auto;
+    right: 20%;
+    position: absolute;
+}
+
+header h1 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    padding: 120px 0 12px;
+    font-size: 50px;
+}
+
+h1 {
+    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: bold;
+}
+
+small {
+    font-size: 15px;
+}
+
+h1 a {
+    color: black;
+    text-decoration: none;
+}
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    min-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: auto;
+}
+
+i {
+    display: inline-block;
+    color: transparent;
+}
+
+.icon-github {
+    background: url('GitHub-Mark-32px-w.png') no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+.icon-twitter {
+    background: url('twitter-w.png') no-repeat;
+    height: 31px;
+    width: 35px;
+    background-size: 31px 26px;
+}
+
+.icon-soundcloud {
+    background:url('https://w.soundcloud.com/icon/assets/images/white_transparent_32-94fc761.png') no-repeat;
+    width: 32px;
+    height: 32px;
+    /*background-size: auto 32px;*/
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    .icon-github {
+        background: url('GitHub-Mark-64px-w.png') no-repeat;
+        background-size: 32px 32px;
+    }
+}
+
+footer {
+
+    background: #222;
+
+    color: #555;
+    padding: 50px 0;
+    height: 150px;
+}
+
+footer .icon-mail {
+    background: url('mail.png') no-repeat;
+    width: 25px;
+    height: 19px;
+    background-size: 25px 19px;
+    opacity: 0.4;
+    padding-top: 3px;
+    vertical-align: middle;
+    padding-right: 16px;
+}
+footer a {
+    color: #555;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+}
+footer a:hover .icon-mail {
+    opacity: 1.0;
+}
+footer h1 {
+    margin: 0.5em 0;
+}
+
+.back {
+    background: #333;
+    padding-top: 32px;
+}
+.back .container {
+    text-align: center;
+}
+
+.intro {
+    padding: 100px 0;
+    background: white;
+    position: relative;
+    z-index: 10;
+}
+.intro, .about {
+    color: black;
+}
+.about {
+    background: rgba(255,255,255,0.9);
+    padding: 50px 0;
+}
+
+.intro .container, .about .container {
+    text-align: center;
+}
+
+p {
+    color: #888;
+    line-height: 2em;
+}
+
+
+#circuit {
+    max-width: 100%;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.0;
+  }
+  20% {
+    opacity: 0.0;
+  }
+  30% {
+    opacity: 1.0;
+  }
+  70% {
+    opacity: 1.0;
+  }
+  80% {
+    opacity: 0.0;
+  }
+  100% { 
+    opacity: 0.0;
+  }
+}
+
+
+#circuit .one {
+    max-width: 900px;
+    position: absolute;
+    -webkit-animation-name: flash; 
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+#circuit .zero {
+    max-width: 900px;
+}

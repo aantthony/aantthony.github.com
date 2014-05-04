@@ -1,30 +1,157 @@
 ---
-layout: default
 title: Anthony Foster
+layout: nil
 ---
-
-<div id="home">
-    <h1>Projects</h1>
-    <ul class="posts">
-        <li><a href="http://graph.tk/about/"><div class="icon"><img src="http://graph.tk/about/resources/logo.png" width="64" /></div></a> <a href="http://graph.tk/about/">Graph.tk</a> - Javascript Graphing Utility</li>
-        <li><a href="http://aantthony.github.com/javascript-cas/"><div class="icon"><img src="http://aantthony.github.com/javascript-cas/icon.png" width="64" /></div></a> <a href="http://aantthony.github.com/javascript-cas/">Javascript-CAS</a> - Javascript Computer Algebra System / Symbolic Math Library</li>
-        <li><a href="http://aantthony.github.com/BigPond-Usage-Meter/"><div class="icon"><img src="images/icons/bp.png" width="50" /></div></a> <a href="http://aantthony.github.com/BigPond-Usage-Meter/">BigPond-Usage-Meter</a> - Menu bar item for Mac OS X that monitors your BigPond internet usage</li>
-<li><a href="/gallery"><div class="icon"><img src="images/icons/bp.png" width="50" style="opacity:0.0" /></div></a> <a href="/gallery">Gallery</a> - A collection of art.</li>
-    </ul>
-    <h1>Blog Posts</h1>
-    <ul class="posts">
-    {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Anthony" />
+    <link href="http://feeds.feedburner.com/aantthony" rel="alternate" title="url3.tk" type="application/atom+xml" />
+    <link rel="stylesheet" href="/css/me.css" type="text/css" media="screen, projection" />
+    {% include analytics.html %}
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="me"></div>
+        <h1>
+            <a href="/">Anthony Foster</a>
+        </h1>
+        <a href="http://twitter.com/aantthony" title="@aantthony on Twitter"><i class="icon-twitter">@aantthony</i></a>
+        <a href="http://github.com/aantthony" title="aantthony on GitHub"><i class="icon-github">aantthony</i></a>
+        <a href="https://soundcloud.com/ahfoster" title="ahfoster on SoundCloud"><i class="icon-soundcloud">ahfoster</i></a>
+    </div>
+</header>
+<div class="intro" z="0">
+    <div class="container">
+        <h1>Hello.</h1>
+        <p>Here are some of the projects I've created.</p>
+    </div>
 </div>
-<script>
-if(!!location.search.match("p=bpmb[^a-z]?")){
-    window.location="http://aantthony.github.com/BigPond-Usage-Meter/";
-}else if(!!location.search.match("p=bigpondwidget[^a-z]?")){
-    window.location="http://aantthony.github.com/BigPond-Usage-Meter/widget.html";
-}
-</script>
+<div class="graph back">
+    <div class="container" z="-20">
+        <img src="http://d1mgybs6tjnh9n.cloudfront.net/3.1.19/images/front/screenshot.png" style="max-width: 100%" />
+    </div>
+</div>
+<div class="about" z="0">
+    <div class="container">
+        <a href="http://equation.io"><img src="http://d1mgybs6tjnh9n.cloudfront.net/3.1.19/images/256.png" width="128" height="128" /></a>
+        <h1><a href="http://equation.io">Equation.IO</a></h1>
+        <p>Graph without bounds.</p>
+        <small>Web-based graphing app that can plot equations, vector fields, etc. in 2D and 3D.</small>
+        <br /><br />
+        <small>Equation.io is an updated (and rebranded) version of my <a href="http://graph.tk">Graph.tk</a> chrome app.</small>
+    </div>
+</div>
+<div class="graph back">
+    <div class="container" z="-20">
+        <div id="circuit">
+            <img src="images/one.png" class="one" />
+            <img src="images/zero.png" class="zero" />
+        </div>
+    </div>
+</div>
+<div class="about" z="0">
+    <div class="container">
+        <a href="http://circuitry.io"><img src="images/c256.png" width="128" height="128" /></a>
+        <h1><a href="http://circuitry.io">Circuitry</a></h1>
+        <p>Create and simulate logic gates.</p>
+        <small>iPad circuit simulation app. Currently in development.</small>
+    </div>
+</div>
+<br />
+<div class="about" z="0">
+    <div class="container">
+        <h1>Spintr</h1>
+        <p>iPhone app. Coming soon.</p>
+    </div>
+</div>
+<br />
+<div class="about" z="0">
+    <div class="container">
+        <a href="http://af.id.au/javascript-cas/"><img src="http://af.id.au/javascript-cas/icon.png" width="128" height="128" /></a>
+        <h1><a href="http://af.id.au/javascript-cas/">Javascript-CAS</a></h1>
+        <p>Math engine which powers Equation.IO.</p>
+        <small>Compiles LaTeX equations into Javascript and GLSL shader code.</small>
+    </div>
+</div>
+<br />
+<div class="about" z="0">
+    <div class="container">
+        <a href="http://af.id.au/BigPond-Usage-Meter/"><img src="images/icons/bp.png" width="128" height="128" /></a>
+        <h1><a href="http://af.id.au/BigPond-Usage-Meter/">Usage Meter Menu Bar</a></h1>
+        <p>This is a bigpond usage meter menu bar item for Mac OS X.</p>
+        <small>It monitors how much you have downloaded and uploaded (your usage) against the billing cycle.</small>
+    </div>
+</div>
 
-<a href="http://twitter.com/aantthony" class="twitter-follow-button">Follow @aantthony</a>
-<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<br />
+<div class="about" z="0">
+    <div class="container">
+        <a href="/gallery"><img src="images/gallery.png" width="128" height="128" /></a>
+        <h1><a href="/gallery">Various Art</a></h1>
+        <p>Collection of images (drawings, 3d renderings, etc.)</p>
+    </div>
+</div>
+<br />
+<div class="about" z="0">
+    <div class="container">
+        <h1><a href="https://github.com/aantthony/mong">Mong</a></h1>
+        <p>Open source. Mongo ORM for Node</p>
+        <small>npm install mong</small>
+    </div>
+</div>
+<br />
+<div class="about" z="0">
+    <div class="container">
+        <h1><a href="https://github.com/aantthony/mongo-objectid-objc">mongo-objectid-objc</a></h1>
+        <p>Open source. Mongo ObjectID class for Objective C</p>
+        <small>Get it <a href="https://github.com/aantthony/mongo-objectid-objc">on github</a>.</small>
+    </div>
+</div>
+<br />
+<div class="about" z="0">
+    <div class="container">
+        <h1><a href="https://github.com/aantthony/contextmenu">contextmenu</a></h1>
+        <p>Open source. Javascript right-click menu. Built for Equation.IO.</p>
+        <small>Get it <a href="https://github.com/aantthony/contextmenu">on github</a>.</small>
+    </div>
+</div>
+<br />
+<div class="about" z="0">
+    <div class="container">
+        <a href="http://af.id.au/logic/"><img src="images/gt.png" width="128" height="128" /></a>
+        <h1><a href="http://af.id.au/logic/">Logic evaluator</a></h1>
+        <p>Simple iPhone web-app.</p>
+        <small>Source code: <a href="https://github.com/aantthony/logic">on github</a>.</small>
+    </div>
+</div>
+<div class="about" z="0">
+    <div class="container">
+        <h1>Other:</h1>
+        {% for post in site.posts %}
+            <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+        {% endfor %}
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <h1>Email me.</h1>
+        <div><a href="#" id="email"><i class="icon-mail"></i><span id="generic_id">...</span></a></div>
+        <br /><br />
+        <small>Gallery icon designed by B. Agustín Amenábar Larraín from the Noun Project</small>
+    </div>
+</footer>
+</div>
+<script type="text/javascript">
+var a=document.getElementById("generic_id");
+var email = document.getElementById('email');
+var eil=unescape(unescape('%25%37%35%25%37%32%25%36%43%25%33%33%25%32%45%25%37%34%25%36%42%25%34%30%25%36%37%25%36%44%25%36%31%25%36%39%25%36%43%25%32%45%25%36%33%25%36%46%25%36%44'));
+email.href="mailto:"+eil;
+a.firstChild.nodeValue=eil;
+</script>
+</body>
+</html>
